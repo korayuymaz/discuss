@@ -1,14 +1,14 @@
+import Link from 'next/link';
 import {
-  Input,
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-} from "@nextui-org/react";
-import Link from "next/link";
-import HeaderAuth from "./header-auth";
+  Input,
+} from '@nextui-org/react';
+import HeaderAuth from '@/components/header-auth';
 
-export default function Header(params: type) {
+export default function Header() {
   return (
     <Navbar className="shadow mb-6">
       <NavbarBrand>
@@ -21,6 +21,7 @@ export default function Header(params: type) {
           <Input />
         </NavbarItem>
       </NavbarContent>
+
       <NavbarContent justify="end">
         <HeaderAuth />
       </NavbarContent>
